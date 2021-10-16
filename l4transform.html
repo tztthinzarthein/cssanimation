@@ -1,0 +1,61 @@
+<!Doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Transform</title>
+		<style type="text/css">
+			.move{
+
+				width: 150px;
+				height: 50px;
+				background-color: red;
+				color: white;
+				font-size: 20px;
+
+				text-align: center;
+				line-height: 50px;
+				
+				margin: 2rem;
+				padding: 20px;
+
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-out;
+			}
+
+			#scale:hover{
+				/*background-color: green;*/
+				transform: scale(2);
+			}
+
+			#translate:hover{
+
+				transform: translate(200px);
+
+			}
+
+			#rotate:hover{
+
+				transform: rotate(180deg);
+
+			}
+
+			#skew:hover{
+
+				transform: skew(45deg);
+			}
+		</style>
+	</head>
+	<body>
+	
+		<div class="container">
+
+			<div id="scale" class="move">Scale Me</div>
+			<div id="translate" class="move">Translate Me</div>
+			<div id="rotate" class="move">Rotate Me</div>
+			<div id="skew" class="move">Skew Me</div>
+			
+		</div>
+	</body>
+	</html>

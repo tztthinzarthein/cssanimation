@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Skew Function</title>
+	<style type="text/css">
+		img{
+			width: 300px;
+			display: block;
+			margin: auto;
+			margin-top: 200px;
+
+			transition: all 2s;
+		}
+
+		img:hover{
+							/*xy*/
+			/*transform: skew(10deg);*/
+							/*x*/
+							/*horizontal*/
+			/*transform: skewX(30deg);*/
+			/*transform: skewX(30deg);*/
+							/*vertical*/
+		    /*transform: skewY(10deg);*/
+			transform: skew(30deg,-30deg);
+		}
+	</style>
+</head>
+<body>
+
+	<img src="img/dog.jpg" alt="dog"/>
+
+</body>
+</html>
